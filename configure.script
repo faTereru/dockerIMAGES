@@ -9,5 +9,11 @@ ClientAliveCountMax 30' >> /etc/ssh/sshd_config
 apt install git curl -y
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
+
+#Config git
+git config --global user.name "Pavel"
+git config --global user.email "gitlab@faterer.com"
+
+
 cd
 git clone https://github.com/faTereru/dockerIMAGES.git
