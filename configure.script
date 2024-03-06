@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Configure SSH
+echo '
+ClientAliveInterval 100
+ClientAliveCountMax 30' >> /etc/ssh/sshd_config
+
+#Install nessesaries
+apt install git curl -y
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+cd
+git clone https://github.com/faTereru/dockerIMAGES.git
